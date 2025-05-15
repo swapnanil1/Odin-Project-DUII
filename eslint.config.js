@@ -12,7 +12,4 @@ export default defineConfig([
         files: ['**/*.{js,mjs,cjs}'],
         languageOptions: { globals: globals.browser },
     },
-    {
-        ignores: ['dist/', 'node_modules/', 'build/', 'coverage/'],
-    },
 ])
