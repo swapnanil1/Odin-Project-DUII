@@ -1,17 +1,18 @@
 export default function miscEvents() {
+    const tuxBtn = document.getElementById('tux')
+    const profileBtn = document.getElementById('profile')
+    const sb_left = document.getElementById('sidebar-left')
+    const sb_right = document.getElementById('sidebar-right')
     //sidebar toggles
-    const leftSidebarAside = document.querySelector('#sidebar-left')
-    const rightSidebarAside = document.querySelector('#sidebar-right')
-    const tuxBtn = document.querySelector('.tux')
-    const profileBtn = document.querySelector('.profile')
+
     tuxBtn.addEventListener('click', (e) => {
         e.preventDefault()
-        leftSidebarAside.style.display =
-            leftSidebarAside.style.display === 'block' ? 'none' : 'block'
+        sb_left.style.display =
+            sb_left.style.display === 'none' ? 'inline-block' : 'none'
     })
     profileBtn.addEventListener('click', (e) => {
         e.preventDefault()
-        rightSidebarAside.style.display =
-            rightSidebarAside.style.display === 'block' ? 'none' : 'block'
+        sb_right.style.display =
+            sb_right.style.display === 'none' ? 'inline-block' : 'none'
     })
 }
