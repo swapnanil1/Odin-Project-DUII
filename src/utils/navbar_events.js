@@ -7,12 +7,12 @@ export default function miscEvents() {
 
     tuxBtn.addEventListener('click', (e) => {
         e.preventDefault()
-        sb_left.style.display =
-            sb_left.style.display === 'none' ? 'inline-block' : 'none'
+        sb_left.classList.toggle('-translate-x-full') // Hide/show by sliding
+        sb_left.classList.toggle('opacity-0') // Fade in/out
     })
     profileBtn.addEventListener('click', (e) => {
         e.preventDefault()
-        sb_right.style.display =
-            sb_right.style.display === 'none' ? 'inline-block' : 'none'
+        sb_right.classList.toggle('translate-x-full') // Hide/show by sliding
+        sb_right.classList.toggle('opacity-0') // Fade in/out
     })
 }
